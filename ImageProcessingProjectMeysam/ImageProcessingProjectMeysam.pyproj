@@ -1,0 +1,277 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f6f220a0-58fe-4765-8502-75cda82a3a6e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>ImageProcessingProjectMeysam.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>ImageProcessingProjectMeysam</Name>
+    <RootNamespace>ImageProcessingProjectMeysam</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BottleCap.py" />
+    <Compile Include="ImageProcessingProjectMeysam.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="images\CapMissing\" />
+    <Folder Include="images\Deformed\" />
+    <Folder Include="images\Filled Level\" />
+    <Folder Include="images\Label Missing\" />
+    <Folder Include="images\Label Print\" />
+    <Folder Include="images\Label Straight\" />
+    <Folder Include="images\Label Straight\temp\" />
+    <Folder Include="TrainingData\" />
+    <Folder Include="TrainingData\1-UnderFilled\" />
+    <Folder Include="TrainingData\2-OverFilled\" />
+    <Folder Include="TrainingData\3-NoLabel\" />
+    <Folder Include="TrainingData\4-NoLabelPrint\" />
+    <Folder Include="TrainingData\5-LabelNotStraight\" />
+    <Folder Include="TrainingData\6-CapMissing\" />
+    <Folder Include="TrainingData\7-DeformedBottle\" />
+    <Folder Include="TrainingData\Filled\" />
+    <Folder Include="TrainingData\MissingBottle\" />
+    <Folder Include="TrainingData\Normal\" />
+    <Folder Include="TrainingData\SideBottles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\CapMissing\cap_faulty_normal.jpg" />
+    <Content Include="images\CapMissing\cap_missing.jpg" />
+    <Content Include="images\CapMissing\cap_missing_hist.jpg" />
+    <Content Include="images\CapMissing\cap_present_hist.jpg" />
+    <Content Include="images\CapMissing\cropped_cap_missing.jpg" />
+    <Content Include="images\CapMissing\cropped_cap_present.jpg" />
+    <Content Include="images\CapMissing\original_cap_missing.jpg" />
+    <Content Include="images\CapMissing\original_cap_present.jpg" />
+    <Content Include="images\Deformed\both_major_axis.jpg" />
+    <Content Include="images\Deformed\both_major_marked.jpg" />
+    <Content Include="images\Deformed\both_minor_axis - marked.jpg" />
+    <Content Include="images\Deformed\both_minor_axis.jpg" />
+    <Content Include="images\Deformed\deformed_cropped.jpg" />
+    <Content Include="images\Deformed\deformed_cropped_8.jpg" />
+    <Content Include="images\Deformed\deformed_cropped_8_thresh_no_small.jpg" />
+    <Content Include="images\Deformed\deformed_cropped_axis.png" />
+    <Content Include="images\Deformed\deformed_cropped_fill_holes - major_minor.jpg" />
+    <Content Include="images\Deformed\deformed_cropped_fill_holes.jpg" />
+    <Content Include="images\Deformed\deformed_cropped_no_small.jpg" />
+    <Content Include="images\Deformed\deformed_cropped_thesh.jpg" />
+    <Content Include="images\Deformed\deformed_hough_deformed.jpg" />
+    <Content Include="images\Deformed\deformed_hough_deformed_overfilled.jpg" />
+    <Content Include="images\Deformed\deformed_hough_normal.jpg" />
+    <Content Include="images\Deformed\deformed_hough_normal_hough.jpg" />
+    <Content Include="images\Deformed\deformed_lines_hough.jpg" />
+    <Content Include="images\Deformed\deformed_window.jpg" />
+    <Content Include="images\Deformed\hough_3.jpg" />
+    <Content Include="images\Deformed\hough_3_highlighted.jpg" />
+    <Content Include="images\Deformed\normal_cropped.jpg" />
+    <Content Include="images\Deformed\normal_no_small.jpg" />
+    <Content Include="images\Deformed\normal_thresh_no_small - Copy.jpg" />
+    <Content Include="images\Deformed\normal_thresh_no_small.jpg" />
+    <Content Include="images\Deformed\normal_window.jpg" />
+    <Content Include="images\Filled Level\cropped_normal.jpg" />
+    <Content Include="images\Filled Level\cropped_overfilled.jpg" />
+    <Content Include="images\Filled Level\cropped_underfilled.jpg" />
+    <Content Include="images\Filled Level\filled - Copy.jpg" />
+    <Content Include="images\Filled Level\filled.jpg" />
+    <Content Include="images\Filled Level\hist_normal.jpg" />
+    <Content Include="images\Filled Level\hist_overfilled.jpg" />
+    <Content Include="images\Filled Level\hist_underfilled.jpg" />
+    <Content Include="images\Filled Level\normal-image4.jpg" />
+    <Content Include="images\Filled Level\overfilled-image4.jpg" />
+    <Content Include="images\Filled Level\underfilled-image5.jpg" />
+    <Content Include="images\flowchart.jpg" />
+    <Content Include="images\Label Missing\cropped_label_missing.jpg" />
+    <Content Include="images\Label Missing\cropped_label_present - Copy.jpg" />
+    <Content Include="images\Label Missing\cropped_label_present.jpg" />
+    <Content Include="images\Label Missing\hist_label_present - Copy.jpg" />
+    <Content Include="images\Label Missing\hist_label_present.jpg" />
+    <Content Include="images\Label Missing\hist_missing_label.jpg" />
+    <Content Include="images\Label Missing\label_missing_histogram.jpg" />
+    <Content Include="images\Label Missing\label_missing_original.jpg" />
+    <Content Include="images\Label Missing\label_present_original1.jpg" />
+    <Content Include="images\Label Missing\RGB_channel_comparison.jpg" />
+    <Content Include="images\Label Print\cropped_label_print_fault.jpg" />
+    <Content Include="images\Label Print\cropped_label_print_normal.jpg" />
+    <Content Include="images\Label Print\hist_print_missing.jpg" />
+    <Content Include="images\Label Print\hist_print_normal.jpg" />
+    <Content Include="images\Label Print\label_pirnt_present.jpg" />
+    <Content Include="images\Label Print\label_printing_ratios.jpg" />
+    <Content Include="images\Label Print\label_print_histograms.jpg" />
+    <Content Include="images\Label Print\label_print_missing.jpg" />
+    <Content Include="images\Label Print\RGB_label_print.jpg" />
+    <Content Include="images\Label Straight\cropped_fault_2_1.jpg" />
+    <Content Include="images\Label Straight\cropped_normal.jpg" />
+    <Content Include="images\Label Straight\label_not_straight_cropped.jpg" />
+    <Content Include="images\Label Straight\label_not_straight_graph.jpg" />
+    <Content Include="images\Label Straight\label_not_straight_original.jpg" />
+    <Content Include="images\Label Straight\label_straight_original.jpg" />
+    <Content Include="images\Label Straight\rgb_comparison.jpg" />
+    <Content Include="images\Label Straight\temp\cropped_label_not_straight_no_thresh.jpg" />
+    <Content Include="images\Label Straight\temp\cropped_label_not_straight_thresh.jpg" />
+    <Content Include="images\Label Straight\temp\cropped_label_straight_no_thresh.jpg" />
+    <Content Include="images\Label Straight\temp\cropped_label_straight_thresh.jpg" />
+    <Content Include="images\Label Straight\temp\label_not_straight_original - Copy.jpg" />
+    <Content Include="images\Label Straight\temp\label_straight_original - Copy.jpg" />
+    <Content Include="TrainingData\.DS_Store" />
+    <Content Include="TrainingData\1-UnderFilled\.DS_Store" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image1.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image2.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image3.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image4.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image5.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image6.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image7.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image8.jpg" />
+    <Content Include="TrainingData\1-UnderFilled\underfilled-image9.jpg" />
+    <Content Include="TrainingData\2-OverFilled\.DS_Store" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image1.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image2.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image3.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image4.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image5.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image6.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image7.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image8.jpg" />
+    <Content Include="TrainingData\2-OverFilled\overfilled-image9.jpg" />
+    <Content Include="TrainingData\3-NoLabel\.DS_Store" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image1.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image2.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image3.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image4.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image5.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image6.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image7.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image8.jpg" />
+    <Content Include="TrainingData\3-NoLabel\nolabel-image9.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\.DS_Store" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image1.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image2.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image3.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image4.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image5.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image6.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image7.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image8.jpg" />
+    <Content Include="TrainingData\4-NoLabelPrint\nolabelprint-image9.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\.DS_Store" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image1.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image2.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image3.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image4.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image5.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image6.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image7.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image8.jpg" />
+    <Content Include="TrainingData\5-LabelNotStraight\labelnotstraight-image9.jpg" />
+    <Content Include="TrainingData\6-CapMissing\.DS_Store" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image1.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image2.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image3.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image4.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image5.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image6.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image7.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image8.jpg" />
+    <Content Include="TrainingData\6-CapMissing\capmissing-image9.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\.DS_Store" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image001.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image002.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image003.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image004.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image005.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image006.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image007.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image008.jpg" />
+    <Content Include="TrainingData\7-DeformedBottle\deformedbottle-image009.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image040.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image041.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image044.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image045.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image046.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image047.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image048.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image049.jpg" />
+    <Content Include="TrainingData\Filled\overfilled-image050.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image031.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image032.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image033.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image034.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image035.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image036.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image037.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image038.jpg" />
+    <Content Include="TrainingData\Filled\underfilled-image039.jpg" />
+    <Content Include="TrainingData\MissingBottle\.DS_Store" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image010.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image011.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image012.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image013.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image014.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image015.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image016.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image017.jpg" />
+    <Content Include="TrainingData\MissingBottle\missingbottle-image018.jpg" />
+    <Content Include="TrainingData\Normal\.DS_Store" />
+    <Content Include="TrainingData\Normal\normal-image1.jpg" />
+    <Content Include="TrainingData\Normal\normal-image10.jpg" />
+    <Content Include="TrainingData\Normal\normal-image11.jpg" />
+    <Content Include="TrainingData\Normal\normal-image12.jpg" />
+    <Content Include="TrainingData\Normal\normal-image13.jpg" />
+    <Content Include="TrainingData\Normal\normal-image14.jpg" />
+    <Content Include="TrainingData\Normal\normal-image15.jpg" />
+    <Content Include="TrainingData\Normal\normal-image16.jpg" />
+    <Content Include="TrainingData\Normal\normal-image17.jpg" />
+    <Content Include="TrainingData\Normal\normal-image18.jpg" />
+    <Content Include="TrainingData\Normal\normal-image19.jpg" />
+    <Content Include="TrainingData\Normal\normal-image2.jpg" />
+    <Content Include="TrainingData\Normal\normal-image20.jpg" />
+    <Content Include="TrainingData\Normal\normal-image21.jpg" />
+    <Content Include="TrainingData\Normal\normal-image22.jpg" />
+    <Content Include="TrainingData\Normal\normal-image23.jpg" />
+    <Content Include="TrainingData\Normal\normal-image24.jpg" />
+    <Content Include="TrainingData\Normal\normal-image3.jpg" />
+    <Content Include="TrainingData\Normal\normal-image4.jpg" />
+    <Content Include="TrainingData\Normal\normal-image5.jpg" />
+    <Content Include="TrainingData\Normal\normal-image6.jpg" />
+    <Content Include="TrainingData\Normal\normal-image7.jpg" />
+    <Content Include="TrainingData\Normal\normal-image8.jpg" />
+    <Content Include="TrainingData\Normal\normal-image9.jpg" />
+    <Content Include="TrainingData\SideBottles\.DS_Store" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image021.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image022.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image023.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image024.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image025.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image026.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image027.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image028.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image029.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image030.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image031.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image032.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image033.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image034.jpg" />
+    <Content Include="TrainingData\SideBottles\sidebottle-image035.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
